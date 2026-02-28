@@ -3,5 +3,5 @@ const app = require("./src/app")
 const PORT = 8000
 
 app.listen(PORT,()=>{
-    console.log(`Server running on ${PORT} Sucssefully!`)
+    console.log(`Server running on ${PORT} Successfully!`)
 })
