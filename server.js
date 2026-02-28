@@ -1,31 +1,7 @@
-const express = require("express")
+const app = require("./src/app")
 
-const app = express();
+const PORT = 8000
 
-const person = [
-    {
-        name:"Sachin",
-        email:"Per@gmail.com",
-    },
-     {
-        name:"Sachin",
-        email:"Per@gmail.com",
-    },
-     {
-        name:"Sachin",
-        email:"Per@gmail.com",
-    },
-
-] 
-
-app.get("/",(req,res)=>{
-   res.send(person)
-})
-
-app.get("/about",(req,res)=>{
-    res.send("This os about page")
-})
-
-app.listen(8080,()=>{
-    console.log("server running")
+app.listen(PORT,()=>{
+    console.log(`Server running on ${PORT} Successfully!`)
 })
